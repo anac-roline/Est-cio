@@ -1,0 +1,479 @@
+ <!DOCTYPE html><!--Doctype indica ao navegador qu eo site e html-->
+<html lang="pt_br">
+<html>
+    <head> <!--olhar-->
+        <title>Ana Caroline</title>
+        <!--Titulo no navegador-->
+       
+       <style>
+       
+
+    <link a href="/home/hmsamches/Documentos/Academico/Estacio/2024/2024-2/DesWeb/Aula-Quinta-Manha/css/h1.css" rel="stylesheet">
+    
+     </style>
+
+     <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+        <!--CSS Incorporado-->
+
+<style type="text/css">
+    h4 {font-family:Arial;
+    font-size: 14pt;
+color:brown;
+}
+/*paragrafo*/
+p {
+    color:black;
+    text-align: center;
+    font-family: verdana;
+    font-size: 20pt;
+
+}
+body {
+    background-image: linear-gradient(#cfc6e6,#e3dcdf)
+}
+/*image*/
+img {
+    border: 2px solid none;
+border-radius: 8px;
+width: 150px;
+}
+/*classe*/
+.main {
+    display: grid;
+    grid: auto auto / auto
+auto auto auto;
+grid-gap: 10px;
+background-color: rgb(230, 182, 182);
+padding: 10px;
+}
+.num {
+background-color: grey;
+text-align: center;
+color: white;
+padding: 10px 10px;
+font-size: 20px;
+}
+/*botao*/
+button {
+    background-color: brown;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+    </style>
+
+    <!--Comando JS-->
+    <script>
+        alert ("site da Ana Caroline");
+    </script>
+
+    <!--apresentando mensagens de alerta pressionando o bot~~ao-
+    1ª parte-->
+    <script>
+        function minhaFuncao() {
+            alert ("Voce clicou no botao")
+        }
+    </script>
+
+    <!--Calcular Delta 1ª parte-->
+
+<script>
+    function calcularDelta() {
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        var c = document.getElementById("c").value;
+        resultadoHTML="";
+        resultadoHTML +="&Delta;="+b+"<sup>2</sup> - 4*" +a +"*" + C + '<br';
+        resultadoHTML+="&Delta;="+ b * b + "-4*"+ a + "*" + C + '<br>';
+        resultadoHTML += "&Delta;=" + b * b + "-" + 4 * a + "*" + C + '<br>';
+        resultadoHTML += "&Delta;=" + b * b + "-" + 4 * a * c + '<br';
+        resultadoHTML += "&Delta;=" + parseInt(b * b - 4 * a * c) + '<br>';
+        document.getElementById("resulltadoDelta").innerHTML = resultadoHTML;
+
+    }
+</script>
+
+<!--Calcule a média aritmética de 3 números-->
+
+<script>
+    var nota01 = parseInt(prompt("Informe o primeiro número", "0"));
+    var nota02 = parseInt (prompt("Informe o segundo número", "0"));
+    var nota03 = parseInt(prompt("Informe o terceiro número", "0"));
+    alert ("A média dos números informados é:" + (nota01+nota02+nota03)/3);
+
+</script>
+
+<!--Calcular o IMC do usuário. Use as TAGs: <input>, <button> e <div>-->
+    <script>
+        function calcularIMC() {
+            var altura = document.getElementById("altura").value;
+        var Peso = document.getElementById("peso").value;
+        altura /= 100;
+        var imc = (peso / (altura* altura)). toFixed(2);
+        document.getElementById("resultadoIMC").innerHTML = "IMC: <strong>" + imc + "</strong>";
+        }
+    </script>
+
+
+
+
+
+    </head>
+    <body> <!--bg color="#F5DEB3">--><!--bg color muda a cor do fundo do site-->
+        <!--Apresentando mensagem de alerta pressionando botao-->
+        <button onclick="minhaFuncao()"> Clique aqui!</button>
+
+        <!--criar botao-->
+        <button>Home</button>
+        <button>Historico</button>
+<button>Contato</button>    
+
+
+
+<!--corpo do site, tudo que colocar aqui e exibido no site-->
+<!--do h1 ao h6 tamanho do titulo-->
+<center><font color="brown"><h1>Ola mundo!</h1></font></center><!--cneter centraliza e font color muda a cor da letra-->
+
+<p style="background-image: url('Moeraki-Boulders-New-Zealand.jpg');">
+    You can specify background images<br>
+    for any visible HTML element.<br>
+    In this example, the background image<br>
+    is specified for a p element.<br>
+    By default, the background-image<br>
+    will repeat itself in the direction(s)<br>
+    where it is smaller than the element<br>
+    where it is specified. (Try resizing the<br>
+    browser window to see how the<br>
+    background image behaves.
+    </p>
+
+    <h2>Images Side by Side</h2>
+    <p>How to create side-by-side images with the CSS float property:</p>
+    
+    <div class="row">
+      <div class="column">
+        <img src="pexels-photo-768932.webp" alt="Snow" style="width:100">
+      </div>
+      <div class="column">
+        <img src="OIP.jpeg" alt="Forest" style="width:80">
+      </div>
+      <div class="column">
+        <img src="R.jpeg" alt="Mountains" style="width:110">
+      </div>
+    </div>
+    
+<h1>Ana Caroline</h1>
+<h2>Ana Caroline</h2>
+<h3>Ana Caroline</h3>
+<h4>Ana Caroline</h4>
+<h5>Ana Caroline</h5>
+<h6>Ana Caroline</h6>
+<!--CSS Inline dentro do Body-->
+<h2 style="color: brown" "text-align: center;">Linguagem dos gatos</h2>
+<p style="color: brown;">Entendendo o que seu gatinho quer lhe dizer</p>
+<!--add uma imagem-->
+<center> <ima src="./images (1).jpg"></img></center>
+
+<br> <br> <!--br significa quebra de linha-->
+
+<!--add uma imagem-->
+<center><img src="./flork-png-30-544x600.png"></center>
+
+<center><img src="./png-clipart-mario-mario.png"></center>
+
+<!--add um video do youtube-->
+<center><iframe width="<iframe width="860" height="415" src="https://www.youtube.com/embed/LxhT_q9oUf8?si=_RsLXCmF5pM-NsMu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"</center>
+
+<br> <br>
+
+<!--p e para paragrafo-->
+<!--font size="tamanho da letra em px ex 3px"
+font color="cor da fonte"
+text-aling formato da letra ex. arial-->
+
+<p><font size="3px"><font color="black"><text-aling arial>Na tabela de cores HTML, voce podera encontrar diversos exemplos de cores com seu codigo hexadecimal, assim como o nome em ingles e o codigo RGB, ja prontos para copiar diretamente para o seu codigo HTML/CSS: </text-aling></font></p>
+<BR>
+
+    <!--sup e sub sobrescrito e subscrito-->
+5<sup>3</sup>
+<br><br>
+5<sub>3</sub>
+
+<br><br>
+
+<center><p> Ana<sup>1</sup>
+    <br>Ana<sub>2</sub> </p></center>
+<br><br>
+<!--hiperlink-->
+Veja o site da Deepl <a href="https://www.deepl.com/pt-BR/translator">Clicando aqui</a>
+<!--colocar link de site para abrir um anova aba usando o comando target "_black"-->
+<p><font color="black">clique aqui para acessar o site Matsuura <a href="https://www.matsuura.com.br/" target ="_blank">clique aqui</a></font></p>
+<br><br>
+
+<!--classe-->
+<div class="main">
+    <div class="num">Um</div>
+    <div class="num">Dois</div>
+    <div class="num">Tres</div>
+    <div class="num">Quatro</div>
+    <div class="num">Cinco</div>
+    <div class="num">Seis</div>
+    <div class="num">Sete</div>
+    <div class="num">Oito</div>
+    <div class="num">Nove</div>
+    <div class="num">Dez</div>
+    <div class="num">Onze</div>
+    <div class="num">Doze</div>
+   
+</div>
+<!--comando que sera utilizado para criar formulario-->
+<input type="checkbox">
+Checkbox</br> <!--criar checkbox-->
+
+<input type="radio">radio</br>
+
+<!--criar caixa de texto com conteudo e sem conteudo-->
+<div><input type="text"
+value="Nome Completo"></div>
+<br>
+<input type="placeholder">
+Digite aqui</br>
+
+<br> <br>
+
+<!--criar lista-->
+<ol>
+    <li>casa</li>
+    <li>carro</li>
+    <li>jardim</li>
+</ol>
+
+<br>
+
+
+<ul>
+    <li>casa</li>
+    <li>carro</li>
+    <li>jardim</li>
+</ul>
+<br><br>
+
+<!--botoes radiais-->
+<form>
+    <input type="radio" name="sex" value="male"> Masculino
+    <br>
+    <input type="radio" name="sex" value="female">
+    Feminino
+</form>
+<br> <br>
+
+<br>
+
+<!--Caixa de Seleção-->
+<form>
+    <input type="checkbox" name="'bike">
+    Eu tenho uma Bicicleta
+    <br>
+    <input type="checkbox" name="car">
+    Eu tenho um carro
+</form>
+
+<br>
+<!--Caixa drop down Simples-->
+<form>
+    <select name="cars">
+    <option value="volvo">Volvo
+    <option value="saab">Saab
+    <option value="fiat">Fiat
+    <option value="audi">Audi
+    <option value="bmw">BMW
+    </select>
+
+</form>
+<br> <br>
+<!--permitir a seleção de arquivos-->
+
+<form>
+    <input type="file" name="arquivos">
+
+<br> <br>
+<!--Para permitir seleção de multiplos arquivos:-->
+<input type="file" name="arquivos" multiple>
+</form>
+
+<br>
+<!--Área de Texto-->
+<textarea rows="10" cols="30">
+
+    O gato estava brinando no jardim.
+</textarea>
+<br>
+<!--Conjunto d campo em torno dos dados-->
+
+<fieldset>
+    <legend>
+        Informações de saúde:
+    </legend>
+    <form>
+        Altura <input type="text" size="3">
+        Peso <input type="text" size="3"
+        <br> <br>
+        <!--data de Nascimento-->
+        Data de Nascimento: <input type="date" name="nascimento">
+        <br><br>
+        <!--Pesquisar-->
+        Pesquisar: <input type="search" name="q"
+        <br> <br>
+        <!--para permitir seleção de multiplos arquivos:-->
+        <input type="file" name="arquivos" multiple>
+        <br> <br>
+        <!--range-->
+        Defina seu nível de satisfação: <br>
+        pouco satisfeito
+        <input type="range" name="satisfação" min="0" max="10">
+        muito satisfeito
+        <br><br>
+        <!--passaword-->
+        <input type="passaword" name="senha" placeholder="Digite sua senha">
+    </form>
+</fieldset>
+<br> <br>
+<!--Formulario completo-->
+<form class="formulario" method="post">
+    <p> Envie uma mensagem preenchendo o formulario abaixo</p>
+    <div class="field">
+        <label for="nome"> Seu nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome*"required>
+        </div>
+        <div class="field">
+            <label for="telefone">Seu telefone:</label>
+        <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone">
+
+        </div>
+        <div class="field">
+            <label for="email">Seu E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu E-mail" required>
+        </div>
+        <div class="field radiobox">
+            <span>Deseja receber nossas novidades?</span>
+            <input type="radio" name="novidades" id="sim" value="sim" checked><label
+             for="sim">Sim</label>
+             <input type="radio" name="novidades" id="nao" value="nao"><label
+             for="nao">Nao</label>
+
+        </div>
+        <div class="field">
+            <label for="mensagem">Sua mensagem:</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Mensagem*"
+            required></textarea>
+    
+        </div>
+        <input type="submit" name="acao" value="Enviar">
+
+</form>
+
+<!--Calculo do Delta 2ª parte-->
+<h3>Calculo do Delta</h3>
+<h3>&Delta; = b<sup>2</sup> - 4 . a . c</h3>
+    <label for="a">Valor de a: </label>
+    <input id="a" type="number" min="0" max="100"><br>
+    <label for="b">Valor de b: </label>
+    <input id="b" type="number" min="0" max="100"><br>
+    <label for="c">Valor de c: </label>
+    <input id="c" type="number" min="0" max="100"><br><br>
+    <button onclick="calcularDelta()">Calcular o &Delta;</button>
+    <p></p>
+    <div id="resultadoDelta"></div>
+
+
+    <!--Potencia com qualquer base ou expoente-->
+    <h3> Potencia com qualquer base ou expoente</h3>
+    <script>
+        
+        document.write("Base 2" + '<br>');
+        document.write("Expoente 3" + '<br>');
+        document.write("Resultado:" + (2* 2*2));
+</script>
+<br>
+
+<!--Potencia exibindo os resultados de cada operaçao-->
+<h3>Potencia exibindo os resultados de cada operaçao</h3>
+
+<script>
+
+    document.write ("Base: 2" + "<br>");
+    document.write ("Expoente: 8" + "<br><br>");
+    document.write ("2<sup>0</sup> = 1"+ "<br>");
+    document.write ("2<sup>1</sup> =" + (2*1)+"<br>");
+    document.write("2<sup>2</sup> = " + (2*2) + "<br>");
+    document.write("2<sup>3</sup> = " + (2*2*2) + "<br>");
+    document.write("2<sup>4</sup> = " + (2*2*2*2) + "<br>");
+    document.write("2<sup>5</sup> = " + (2*2*2*2*2) + "<br>");
+    document.write("2<sup>6</sup> = " + (2*2*2*2*2*2) + "<br>");
+    document.write("2<sup>7</sup> = " + (2*2*2*2*2*2*2) + "<br>");
+    document.write("2<sup>8</sup> = " + (2*2*2*2*2*2*2*2) + "<br>");
+
+</script>
+<br><br>
+
+<!--Calculo IMC-->
+<h2>Calculo do IMC</h2>
+<label for="altura">Altura(cm):</label>
+<input id ="altura" type="number" min="100" max="250"><br>
+<label for="peso">Peso (kg):</label>
+<input id="peso" type="number" min="0" max="250"><br>
+<button onclick="calcularIMC()">Calcular IMC</button>
+<div id="resultadoIMC"></div>
+<div id="extra">
+    <pre>
+
+****************************************************
+ |
+IMC
+|
+CATEGORIA
+|
+|---------------------------------------------------------|
+|Ate 18,5
+| Abaixo do peso
+|
+| De 18,5 - 24,9 | Saudavel 
+ | De 25,0 - 29,9 | Sobrepeso
+| De 30,0 - 39,9  | Obeso
+|
+| Acima de 40 
+ | Extremo ou alto risco de obesidade
+|
+ ***************************************************
+
+
+    </pre>
+
+
+
+
+
+
+</body>
+</html>
