@@ -3,7 +3,6 @@
 <head>
 <title>Tratamentos - Ana Estetica Avançada</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
@@ -14,9 +13,32 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
+.navbar img {
 
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+  background-color: whitesmoke;
+  padding: 10px;
 
+}
 
+.navbar-button {
+    position: relative;
+  top: 10px;
+  right: 10px;
+  background-color: #b77723;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar-button:hover {
+  background-color: #d8a451;
+}
 /* Increase the font size of the heading */
 .header h1 {
   font-size: 40px;
@@ -25,17 +47,20 @@ body {
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: rgb(238, 152, 98);
+  background-color: whitesmoke;
+ padding: 10px;
+  position: relative;
 }
 
 /* Style the navigation bar links */
 .navbar a {
-  float: left;
+  float:right; /* Alinha os botões para a direita */
   display: block;
   color: white;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
+  margin-left: 10px; /* Espaçamento curto entre os botões */
 }
 
 /* Right-aligned link */
@@ -57,6 +82,7 @@ body {
   flex-wrap: wrap;
 }
 
+
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
@@ -74,7 +100,7 @@ body {
   padding: 20px;
 }
 
-/* Fake image, just for this example */
+/*image, just for this example */
 img {
   width: 30%;
   padding: 15px;
@@ -84,7 +110,7 @@ img {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: #c88e5f;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -107,12 +133,12 @@ img {
 
 
 
-<div class="navbar">
-  <a href="#">Pagina Inicial</a>
-  <a href="#">Tratamentos</a>
-  
-  <a href="#">Contato</a>
-</div>
+    <div class="navbar">
+        <img src="Logotipo Nome Minimalista Amarelo (2).png" alt="Logo da empresa">
+        <a href="paginainicial.html" class="navbar-button">Pagina Inicial</a>
+        <a href="#tratamentos" class="navbar-button">Tratamentos</a>
+        <a href="contato.html" class="navbar-button">Contato</a>
+      </div>
 
 <div class="row">
   <div class="side">
@@ -133,13 +159,13 @@ img {
     
     <p>Reposiciona tecidos e promove um discreto Lifting Facial, sem a necessidade de internações, anestesia geral ou cortes.</p>
     
-    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="img" style="height:60px;">Image</div><br>
     
         <h3>Preenchimento Facial</h3>
     
     <p>Procedimentos realizados para dar volume e contorno na boca e redefinir os contornos faciais e também tratar rugas fundas.</p>
     
-    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="img" style="height:60px;">Image</div><br>
     
         <h3>Toxina Botulínica</h3>
     
@@ -147,25 +173,25 @@ img {
 
 </p>
     
-    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="img" style="height:60px;">Image</div><br>
     
         <h3>Blefaroplastia</h3>
     
     <p>A Blefaroplastia não cirúrgica é um procedimento para minimizar o problema das pálpebras caídas através do laser. É segura, não invasiva (sem cortes) e eficiente.</p>
     
-    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="img" style="height:60px;">Image</div><br>
     
         <h3>Microagulhamento</h3>
     
     <p>É um procedimento realizado com inúmeras agulhas bem pequenas que perfuram as camadas da pele para estimular o colágeno.</p>
     
-    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="img" style="height:60px;">Image</div><br>
     
         <h3>Ledterapia e Laser</h3>
     
     <p>É realizada para tratar casos mais graves de acne, dermatite seborreica (caspa) e foliculite. Utiliza a tecnologia da luz azul, para diminuir a oleosidade e eliminar as bactérias causadoras da acne.</p>
     
-    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="img" style="height:60px;">Image</div><br>
     
     
     <h3>Intradermoterapia
@@ -174,7 +200,7 @@ img {
     
     <p>É realizada para tratar casos mais graves de acne, dermatite seborreica (caspa) e foliculite. Utiliza a tecnologia da luz azul, para diminuir a oleosidade e eliminar as bactérias causadoras da acne.</p>
     
-    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="img" style="height:60px;">Image</div><br>
     
     
     
@@ -189,7 +215,7 @@ img {
  
     
     <h6>Não Invasivos</h6>
-   
+    <ul class="treatment-list">
                         <li>Limpeza de pele com Peeling de Diamante</li>
                         <li>Cavitação/ultrassom (gordura e celulite)</li>
                         <li>Ledterapia</li>
@@ -211,8 +237,24 @@ img {
    
 
 <div class="footer">
-  <h2>Footer</h2>
+    <div class="footer">
+        <h2>Contato</h2>
+        <p>Telefone: 55(61) 993378679</p>
+        <p>Email: contato@anaestetica.com.br</p>
+        <p>Endereço: Rua tal, 123 - Bairro, Cidade - DF</p>
+      
+        <h3>Siga-nos</h3>
+        <a href="https://wa.me/5561993378679" target="_blank" style="text-decoration: none;">
+          <img src="WhatsApp-icone.png" alt="WhatsApp" style="width: 30px; height: 30px; margin-right: 10px;">
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/anac_roline/" target="_blank" style="text-decoration: none;">
+          <img src="Logo-Instagram-Png-1024x1024.webp" alt="Instagram" style="width: 30px; height: 30px; margin-right: 10px;">
+          Instagram
+        </a>
+      </div>
+      
 </div>
-
+<script src="Logotipo Nome Minimalista Amarelo (2).png"></script>
 </body>
 </html>
