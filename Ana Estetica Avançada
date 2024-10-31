@@ -3,149 +3,28 @@
 <head>
 <title>Tratamentos - Ana Estetica Avançada</title>
 <meta charset="UTF-8">
-<style>
-* {
-  box-sizing: border-box;
-}
+<link rel="stylesheet" href="style.css">
 
-/* Style the body */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-.navbar img {
-
-    float: left;
-    margin-right: 20px;
-    overflow: hidden;
-  background-color: whitesmoke;
-  padding: 10px;
-
-}
-
-.navbar-button {
-    position: relative;
-  top: 10px;
-  right: 10px;
-  background-color: #b77723;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.navbar-button:hover {
-  background-color: #d8a451;
-}
-/* Increase the font size of the heading */
-.header h1 {
-  font-size: 40px;
-}
-
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: whitesmoke;
- padding: 10px;
-  position: relative;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float:right; /* Alinha os botões para a direita */
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  margin-left: 10px; /* Espaçamento curto entre os botões */
-}
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
-
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: white;
-  padding: 20px;
-}
-
-/* Main column */
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-
-/*image, just for this example */
-img {
-  width: 30%;
-  padding: 15px;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #c88e5f;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
 </head>
 <body>
 
 
 
-    <div class="navbar">
+    <header class="navbar">
         <img src="Logotipo Nome Minimalista Amarelo (2).png" alt="Logo da empresa">
-        <a href="paginainicial.html" class="navbar-button">Pagina Inicial</a>
-        <a href="#tratamentos" class="navbar-button">Tratamentos</a>
         <a href="contato.html" class="navbar-button">Contato</a>
-      </div>
+        <a href="#tratamentos" class="navbar-button">Tratamentos</a>
+        <a href="paginainicial.html" class="navbar-button">Pagina Inicial</a>
+    </header>
+    
 
-<div class="row">
-  <div class="side">
+    <main class="row">
+        <section class="side">
     <h2>Tratamentos</h2>
     <h5>Tratamentos Biomédicos Estéticos:</h5>
     <h6>Invasivos:</h6>
-    
+</section>
+</main>
         <h3>Harmonização Facial</h3>
     
     <p>Conjunto de procedimentos estéticos para melhorar a harmonia do rosto e proporcionar também equilíbrio facial.
@@ -236,25 +115,38 @@ img {
                      </ul>
    
 
-<div class="footer">
-    <div class="footer">
+        <footer class="footer">
         <h2>Contato</h2>
         <p>Telefone: 55(61) 993378679</p>
         <p>Email: contato@anaestetica.com.br</p>
         <p>Endereço: Rua tal, 123 - Bairro, Cidade - DF</p>
       
         <h3>Siga-nos</h3>
-        <a href="https://wa.me/5561993378679" target="_blank" style="text-decoration: none;">
-          <img src="WhatsApp-icone.png" alt="WhatsApp" style="width: 30px; height: 30px; margin-right: 10px;">
-          WhatsApp
-        </a>
-        <a href="https://www.instagram.com/anac_roline/" target="_blank" style="text-decoration: none;">
-          <img src="Logo-Instagram-Png-1024x1024.webp" alt="Instagram" style="width: 30px; height: 30px; margin-right: 10px;">
-          Instagram
-        </a>
+        <ul class="social-links">
+            <li>
+                <a href="https://wa.me/5561993378679" target="_blank" aria-label="WhatsApp">
+                    <img src="WhatsApp-icone.png" alt="WhatsApp">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/anac_roline/" target="_blank" aria-label="Instagram">
+                    <img src="Instagram-Logo-PNG-Image-1.png" alt="Instagram">
+                </a>
+            </li>
+         <!-- Google Maps Iframe -->
+    <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.749632258338!2d-48.034737626112836!3d-15.869750884781162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2d98f7ffffff%3A0x4f7d7a315233f8c1!2sCentro%20Universit%C3%A1rio%20Est%C3%A1cio!5e0!3m2!1spt-BR!2sbr!4v1730151879607!5m2!1spt-BR!2sbr"
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
       </div>
       
 </div>
-<script src="Logotipo Nome Minimalista Amarelo (2).png"></script>
+
 </body>
 </html>
