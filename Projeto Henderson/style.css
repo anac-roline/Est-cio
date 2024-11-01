@@ -1,0 +1,113 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.header .logo{
+  margin: 10px;
+  margin-left: 100px;
+}
+
+.header .logo img{
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.header .navbar{
+  margin-right: 100px;
+}
+
+.header .navbar a{
+  color: black;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 20px;
+}
+img {
+  max-width: 100%;
+  display: block;
+  width: 200px; /* ou outro tamanho que preferir */
+  height: 200px;
+  object-fit: cover;
+}
+h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.menu {
+  display: flex;
+  
+}
+.menu li {
+  margin-left: 10px;
+
+}
+
+
+.menu li a {
+  display: block;
+  padding: 10px;
+
+}
+
+
+/*CSS FLEXBOX 1*/
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1088px;
+  margin: 0 auto;
+
+}
+.flex > div{
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #c88e5f;
+  justify-content: center;
+}
+
+.footer .footer-informations{
+  margin: 0 auto;
+}
+
+.footer .google-map{
+  width: 600px;
+  height: 300px;
+}
+
+.footer .google-map iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.footer .footer-informations .social-links{
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer .footer-informations .social-links a{
+  color: black;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 20px;
+}
